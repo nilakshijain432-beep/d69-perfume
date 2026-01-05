@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D69 Perfume</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <img src="logo.jpg" alt="D69 Perfume">
+  </div>
+
+  <div class="brand-name">D69 Perfume</div>
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#collections">Collections</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Luxury in Every Drop</h1>
+    <p>Premium fragrances crafted to define your presence</p>
+    <a href="#collections" class="explore-btn">Explore Collection</a>
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section class="collections" id="collections">
+  <h2>Our Collection</h2>
+
+  <div class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('men')">Men</button>
+    <button onclick="filterProducts('women')">Women</button>
+    <button onclick="filterProducts('unisex')">Unisex</button>
+  </div>
+
+  <div class="product-grid">
+    <!-- Card -->
+    <div class="card women" onclick="openPopup({
+  name:'Chanel',
+  img:'chanel1.jpg',
+  desc:'Iconic, elegant and refined fragrance.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="chanel1.jpg">
+  <h3>Chanel</h3>
+</div>
+
+    <div class="card women" onclick="openPopup({
+  name:'Chocolate',
+  img:'chocolate.jpg',
+  desc:'Rich, gourmand chocolate for those who love dessert-like notes.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="chocolate.jpg">
+  <h3>Chocolate</h3>
+</div>
+
+    <div class="card unisex" onclick="openPopup({
+  name:'Cool Water',
+  img:'cool-water.jpg',
+  desc:'Oceanic and breezy, with hints of mint and sea notes.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="cool-water.jpg">
+  <h3>Cool Water</h3>
+</div>
+
+    <div class="card unisex" onclick="openPopup({
+  name:'Green Apple',
+  img:'green-apple.jpg',
+  desc:'Crisp, fruity, and playful.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="green-apple.jpg">
+  <h3>Green Apple</h3>
+</div>
+
+    <div class="card women" onclick="openPopup({
+  name:'Gucci Flora',
+  img:'gucci-flora.jpg',
+  desc:'Inspired by Gucci, luxurious floral bouquet for elegant wear.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="gucci-flora.jpg">
+  <h3>Gucci Flora</h3>
+</div>
+
+    <div class="card unisex" onclick="openPopup({
+  name:'Havas',
+  img:'havas.jpg',
+  desc:'A fresh, youthful floral with a hint of wild charm.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="havas.jpg">
+  <h3>Havas</h3>
+</div>
+	
+	<div class="card men" onclick="openPopup({
+  name:'Magnet',
+  img:'magnet.jpg',
+  desc:'Attractive and magnetic, with deep masculine spices.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="magnet.jpg">
+  <h3>Magnet</h3>
+</div>
+
+    <div class="card men" onclick="openPopup({
+  name:'Shanaya',
+  img:'shanaya.jpg',
+  desc:'Feminine and delicate; a floral-fruity mix with a modern touch.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="shanaya.jpg">
+  <h3>Shanaya</h3>
+</div>
+
+    <div class="card men" onclick="openPopup({
+  name:'Titan',
+  img:'titan.jpg',
+  desc:'Strong, masculine, with aquatic and woody undertones.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="titan.jpg">
+  <h3>Titan</h3>
+</div>
+	
+	<div class="card women" onclick="openPopup({
+  name:'Vanity',
+  img:'vanity.jpg',
+  desc:'A mix of sweet and musky — fashionable and alluring.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="vanity.jpg">
+  <h3>Vanity</h3>
+</div>
+
+    <div class="card men" onclick="openPopup({
+  name:'White Oud',
+  img:'white-oud.jpg',
+  desc:'A clean version of the bold oud fragrance, modern and rich.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="white-oud.jpg">
+  <h3>White Oud</h3>
+</div>
+
+   <div class="card unisex" onclick="openPopup({
+  name:'Chanel',
+  img:'chanel.jpg',
+  desc:'Iconic, elegant and refined fragrance.',
+  price30:400,
+  price10:200,
+  insta:'https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh'
+})">
+  <img src="chanel.jpg">
+  <h3>Chanel</h3>
+</div>
+
+	
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2>About D69 Perfume</h2><br>
+  <p>
+    Founded by <strong>Prajakta Kadgi</strong>.<br> D69 Perfume is a luxury fragrance brand
+    focused on premium, long-lasting scents crafted for modern personalities.<br>
+	<strong>Old Essence, New Obsession</strong>
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>📞 +91 7720037325</p>
+  <p class="insta">
+  <i class="fa-brands fa-instagram"></i>
+    <a href="https://www.instagram.com/_d69_perfume?igsh=c2JiMTYxZWZ2cnRh" target="_blank">_d69_perfume</a>
+  </p>
+</section>
+
+<!-- PRODUCT POPUP -->
+<div id="popup" class="popup" onclick="closeOnOverlay(event)">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">×</span>
+
+    <img id="popup-img" src="" alt="Perfume" />
+
+    <h2 id="popup-title"></h2>
+    <p id="popup-desc"></p>
+
+    <p class="price">
+      <strong>30ml:</strong> ₹<span id="price30"></span> |
+      <strong>10ml:</strong> ₹<span id="price10"></span>
+    </p>
+
+    <a
+      id="insta-link"
+      href="#"
+      target="_blank"
+      class="insta-btn"
+    >
+      Order on Instagram
+    </a>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
